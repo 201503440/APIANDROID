@@ -64,8 +64,10 @@ app.get('/Android/Cube', function(req, res, next) {
 });
 
 app.get('/Arduino/Cube', function(req, res, next){
-	res.send(cube);
+	res.send(cube);  
 	cube = 'u';
+  //linea extre CS  
+  res.end('c:');
 });
 /*//Ejemplo: POST http://localhost:8080/items
 app.post('/items', function(req, res) {

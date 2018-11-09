@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/201503440/APIANDROID#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "html-to-printer": "^1.0.1"
   }
 }
