@@ -1,23 +1,15 @@
 {
-  "name": "apiandroid",
+  "name": "modulo-seguridad",
   "version": "1.0.0",
-  "description": "api para android con nodejs",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/201503440/APIANDROID.git"
-  },
-  "author": "",
+  "author": "Grupo2",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/201503440/APIANDROID/issues"
-  },
-  "homepage": "https://github.com/201503440/APIANDROID#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "html-to-printer": "^1.0.1"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
   }
 }
