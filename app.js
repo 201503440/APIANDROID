@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
     }else if (req.method == 'GET') {        
       res.writeHead(200, { 'Content-Type': 'text/html' });        
       res.send('a');
-      res.end('a');      
+      res.end('PETICION GET SERVIDOR CORRIENDO...');      
     }else {
       res.writeHead(200, { 'Content-Type': 'text/html' });
       res.end('Modulo de seguridad interna corriendo...');
