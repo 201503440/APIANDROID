@@ -1,7 +1,7 @@
 var http = require('http');
 var bodyParser = require('body-parser');
 
-http.createServer(function (req, res) {
+/*http.createServer(function (req, res) {
     
     if (req.method == 'POST') {
     	res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -12,9 +12,8 @@ http.createServer(function (req, res) {
     }else {
     	res.writeHead(200, { 'Content-Type': 'text/html' });
     	res.end('Modulo de seguridad interna corriendo...');
-    }
-    
-}).listen(process.env.PORT || 8080);
+    }    
+}).listen(process.env.PORT || 8080);*/
 
 // Cargar modulos y crear nueva aplicacion
 var express = require("express"); 
@@ -105,4 +104,7 @@ app.delete('/items/:id', function(req, res) {
    var itemId = req.params.id;
    res.send('Delete ' + itemId);
 });*/
-  
+
+var server = app.listen(8080, function () {
+    console.log('Server is running..'); 
+});                   
