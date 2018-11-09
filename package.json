@@ -1,8 +1,22 @@
 {
-	"name": "Proyecto2",
-	"version": "0.0.1",
-	"dependencies": {
-		"express": "^4.16.4",
-		"restify": "4.0.3"
-	}
+  "name": "apiandroid",
+  "version": "1.0.0",
+  "description": "api para android con nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/201503440/APIANDROID.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/201503440/APIANDROID/issues"
+  },
+  "homepage": "https://github.com/201503440/APIANDROID#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
