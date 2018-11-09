@@ -41,12 +41,12 @@ app.get('/Arduino/Heart', function(req, res, next){
     heart = 'h';
 });
 
-app.get('/Android/Cube', function(req, res, next) {
+app.get('/AnCube', function(req, res, next) {
   cube = 'U';
   res.send('Cube Android');
 });
 
-app.get('/Arduino/Cube', function(req, res, next){
+app.get('/ArCube', function(req, res, next){
   res.send(cube);  
   cube = 'u';
   //linea extre CS  
