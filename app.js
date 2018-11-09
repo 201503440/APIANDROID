@@ -52,25 +52,7 @@ app.get('/Arduino/Cube', function(req, res, next){
   //linea extre CS  
   res.end('c:');
 });
-/*//Ejemplo: POST http://localhost:8080/items
-app.post('/items', function(req, res) {
-   var data = req.body.data;
-   res.send('Add ' + data);
-});
- 
-//Ejemplo: PUT http://localhost:8080/items
-app.put('/items', function(req, res) {
-   var itemId = req.body.id;
-   var data = req.body.data;
-   res.send('Update ' + itemId + ' with ' + data);
-});
- 
-//Ejemplo: DELETE http://localhost:8080/items
-app.delete('/items/:id', function(req, res) {
-   var itemId = req.params.id;
-   res.send('Delete ' + itemId);
-});*/
-  
+
 var server = app.listen(8080, function (req, res) {
 
   //console.log('Server is running..'); 
