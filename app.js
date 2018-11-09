@@ -8,7 +8,8 @@ http.createServer(function (req, res) {
       res.end('SE HIZO PETICION POST AL SERVIDOR...');
     }else if (req.method == 'GET') {        
       res.writeHead(200, { 'Content-Type': 'text/html' });        
-      res.end('SE HIZO PETICION GET AL SERVIDOR...');
+      res.send('a');
+      res.end('a');      
     }else {
       res.writeHead(200, { 'Content-Type': 'text/html' });
       res.end('Modulo de seguridad interna corriendo...');
