@@ -55,8 +55,6 @@ app.get('/ArCube', function(req, res, next){
 
 var server = app.listen(8080, function (req, res) {
 
-  //console.log('Server is running..'); 
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.end('SERVIDOR CORRIENDO...');
+  console.log('Server is running..'); 
 
 });
