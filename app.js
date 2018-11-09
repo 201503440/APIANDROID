@@ -34,8 +34,8 @@ app.get('/Android/Piramide', function(req, res, next) {
 });
 
 app.get('/Arduino/Piramide', function(req, res, next){
-    res.send(piramide);
-    piramide = 'p';
+	res.send(piramide);
+	piramide = 'p';
 });
  
 app.get('/Android/Cilinder', function(req, res, next) {
@@ -44,8 +44,8 @@ app.get('/Android/Cilinder', function(req, res, next) {
 });
 
 app.get('/Arduino/Cilinder', function(req, res, next){
-    res.send(cilinder);
-    cilinder = 'c';
+	res.send(cilinder);
+	cilinder = 'c';
 });
 
 app.get('/Android/Heart', function(req, res, next) {
@@ -54,8 +54,8 @@ app.get('/Android/Heart', function(req, res, next) {
 });
 
 app.get('/Arduino/Heart', function(req, res, next){
-    res.send(heart);
-    heart = 'h';
+	res.send(heart);
+	heart = 'h';
 });
 
 app.get('/Android/Cube', function(req, res, next) {
@@ -64,8 +64,8 @@ app.get('/Android/Cube', function(req, res, next) {
 });
 
 app.get('/Arduino/Cube', function(req, res, next){
-    res.send(cube);  
-    cube = 'u';
+	res.send(cube);  
+	cube = 'u';
   //linea extre CS  
   res.end('c:');
 });
@@ -87,7 +87,11 @@ app.delete('/items/:id', function(req, res) {
    var itemId = req.params.id;
    res.send('Delete ' + itemId);
 });*/
+  
+var server = app.listen(8080, function (req, res) {
 
-var server = app.listen(8080, function () {
-    console.log('Server is running..'); 
-});                   
+  //console.log('Server is running..'); 
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end('SERVIDOR CORRIENDO...');
+
+});					  
